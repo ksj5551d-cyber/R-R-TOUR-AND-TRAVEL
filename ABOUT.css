@@ -38,7 +38,7 @@
 
 
 .hpimg {
-  position: relative;     /* keeps child elements positioned correctly */
+  position: center;     /* keeps child elements positioned correctly */
   width: 100%;            /* full width */
   display: block;         /* better for responsiveness than inline-block */
   padding-top: 20px;
@@ -48,7 +48,7 @@
 /* Ensure images inside .hpimg scale responsively */
 .hpimg img {
   width: 100%;
-  height: auto;
+  height: 400px;
   display: block;
   border-radius: 8px;     /* optional: rounded corners */
 }
