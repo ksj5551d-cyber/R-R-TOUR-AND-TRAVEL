@@ -498,18 +498,22 @@
 
           <figure class="about-banner">
             <img src="K_20250917_210740_0000.jpg" width="756" height="842" loading="lazy" alt="" class="w-100">
-            <img src="KAUSHAL Tours & Travels_20250917_211406_0000.png" width="756" height="842" loading="lazy" alt="" class="w-100">
+            <img src="KAUSHAL Tours & Travels_20250917_211406_0000.png" width="700" height="800" loading="lazy" alt="" class="w-100">
           </figure>
-          <style>
+         
+
+        </div>
+        <style>
             .about-banner {
                            position: relative;
-                           width: 600px;
-                           height: 600px;
+                           width: 500px;
+                           height: 500px;
                            border-radius: 50%;
                            overflow: hidden;
+                           
                          }
 
-            .about-banner img {
+.about-banner img {
                            position: absolute;
                            width: 100%;
                            height: 100%;
@@ -518,24 +522,36 @@
                            animation: rotateImage 6s infinite;
                          }
 
-            .about-banner img:nth-child(1) {
+.about-banner img:nth-child(1) {
                            animation-delay: 0s;
                          }
 
-            .about-banner img:nth-child(2) {
+.about-banner img:nth-child(2) {
                            animation-delay: 3s;
                          }
 
-    @keyframes rotateImage {
+ @keyframes rotateImage {
       0% { opacity: 0; transform: rotateY(90deg); }
       10% { opacity: 1; transform: rotateY(0deg); }
       40% { opacity: 1; transform: rotateY(0deg); }
       50% { opacity: 0; transform: rotateY(-90deg); }
       100% { opacity: 0; transform: rotateY(-90deg); }
     }
-          </style>
+    
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .about-banner {
+    max-width: 600px;   /* smaller circle */
+  }
+}
 
-        </div>
+@media (max-width: 480px) {
+  .about-banner {
+    max-width: 350px;   /* fits small phones */
+  }
+}
+
+        </style>
       </section>
 
 
@@ -828,7 +844,7 @@
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.09 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.05.39 2.07.8 3.03a2 2 0 0 1-.45 2.11L9.91 10.09a16 16 0 0 0 6 6l1.23-1.23a2 2 0 0 1 2.11-.45c.96.41 1.98.68 3.03.8A2 2 0 0 1 22 16.92z" fill="white"/>
       </svg>
     </span>
-    <span class="txt">Call +91 12345 67890</span>
+    <span class="txt">Call +91 8628932897</span>
   </a>
 
   <a class="contact-btn whatsapp" href="https://wa.me/918628932897" title="Message us on WhatsApp" aria-label="Message us on WhatsApp at +91 86289 32897" target="_blank" rel="noopener noreferrer">
@@ -1035,7 +1051,7 @@
   <!-- 
     - custom js link
 -->
-  <script src="C:\Users\PC\Desktop\Ajay1\.vscode\script.js"></script>
+  <script src="script.js"></script>
 
   <!-- 
     - ionicon link

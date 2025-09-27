@@ -38,7 +38,10 @@
 
 
 .hpimg {
-  position: center;     /* keeps child elements positioned correctly */
+    display: flex;
+  position: relative;     /* keeps child elements positioned correctly */
+  justify-content: center;
+  align-items: center;
   width: 100%;            /* full width */
   display: block;         /* better for responsiveness than inline-block */
   padding-top: 20px;
@@ -73,11 +76,24 @@
 
 .fhed {
   position: absolute;    /* puts the text over the image */
-  top: 50%;              /* adjust vertical position */
-  left: 50%;             /* adjust horizontal position */
   transform: translate(-50%, -50%); /* centers text */
   text-align: center;
+  padding: 20px;
+  z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.5rem; /* Smaller font size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 1rem; /* Even smaller font size on very small screens */
+  }
+}
+
 
 .fh1 {
   color: white;          /* visible over image */
@@ -87,6 +103,8 @@
   font-family: var(--ff-comforter-brush);
 }
 
+
+/*about section text styling*/
 
 /* General Section Styling */
 .asc {
@@ -207,7 +225,7 @@
   }
 
   .ash {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .pas {
@@ -215,7 +233,7 @@
   }
 }
 
- /* Floating Call & WhatsApp Buttons */
+ /* Floating Call & WhatsApp Buttons 
 .floating-buttons {
   position: fixed;
   right: 20px;
