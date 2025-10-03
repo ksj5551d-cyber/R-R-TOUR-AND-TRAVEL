@@ -51,11 +51,3 @@ const goBottomBtn = document.getElementById('goBottomBtn');
 
   
   
-  let avv = document.querySelector("#btnn1"); 
-let bb = document.querySelector("body"); 
-let crmode = "light"; 
-
-avv.addEventListener("click", () => { 
-    bb.classList.toggle("dark"); 
-    
-});
