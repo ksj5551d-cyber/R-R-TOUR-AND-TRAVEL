@@ -736,7 +736,7 @@ body {
 \*-----------------------------------*/  
 
 .taxisection{
-  background-color: #fff;
+  /* background-color: #fff; */
   padding-bottom: 50px;
   
 }
@@ -1490,4 +1490,13 @@ body {
 
   .about .container { grid-template-columns: 0.7fr 1fr; }
 
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color:white;
+    color:black;
 }
