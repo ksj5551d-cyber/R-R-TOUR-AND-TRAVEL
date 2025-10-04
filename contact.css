@@ -164,7 +164,7 @@ textarea {
   }
   .info-item {
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .form-row {
     flex-direction: column;
@@ -181,5 +181,8 @@ textarea {
   .submit-btn {
     width: 100%;
     text-align: center;
+  }
+  .info-item{
+    font-size: 1.2rem;
   }
 }
