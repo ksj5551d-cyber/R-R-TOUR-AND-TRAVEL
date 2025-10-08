@@ -173,6 +173,7 @@
 .about-banner {
   display: flex;
   flex-direction:row;
+  flex-wrap: wrap;
   gap: 20px;
   
 }
@@ -204,6 +205,7 @@
 .pas {
   display: grid;
   text-align: justify;
+  
   font-size: 1.8rem;
   column-count: 2; /* two-column newspaper effect */
   column-gap: 30px;
@@ -234,10 +236,15 @@
   .pas {
     font-size: 0.95rem;
   }
-  .about-banner{
-    width: 50%;
-    height: auto;
+  .divas{
+    justify-content: flex-end;
   }
+
+  .about-banner{
+    width: 200px;
+    height: 200px;
+  }
+  
 }
 
  /* Floating Call & WhatsApp Buttons 
