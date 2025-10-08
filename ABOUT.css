@@ -234,6 +234,10 @@
   .pas {
     font-size: 0.95rem;
   }
+  .about-banner{
+    width: 50%;
+    height: auto;
+  }
 }
 
  /* Floating Call & WhatsApp Buttons 
